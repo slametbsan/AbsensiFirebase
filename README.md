@@ -1,5 +1,6 @@
 # AbsensiFirebase
 
+![Absensi Online](/gbr_playstore0.jpg?raw=true)
 Merupakan project contoh aplikasi Absensi Online berbasis Android dan Firebase. Dibuat untuk tujuan _proof of concept_ yang memberikan alur/tahapan perancangan aplikasi. Contoh skrip dibuat sesederhana mungkin untuk menghindari kompleksitas karena titik berat contoh ini pada tahapan pembuatannya.
 
 Project ini dapat anda manfaatkan sebagai **referensi** dalam membuat aplikasi sejenis.
