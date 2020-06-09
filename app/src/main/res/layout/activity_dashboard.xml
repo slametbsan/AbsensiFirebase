@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    tools:context=".DashboardActivity">
+
+    <ImageView
+        android:id="@+id/fotoProfil"
+        android:layout_width="match_parent"
+        android:layout_height="254dp"
+        android:contentDescription="Foto Profil"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/no_profile_picture" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnKamera"
+        android:src="@drawable/ic_camera"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/btnKamera"
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnEdit"
+        android:src="@drawable/ic_edit"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/btnEdit"
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnLogout"
+        android:src="@drawable/ic_logout"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="#992C384A"
+        android:weightSum="2"
+        android:id="@+id/layoutNama"
+        android:paddingStart="15dp"
+        android:paddingEnd="20dp"
+        android:paddingVertical="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="190dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tvNama"
+            android:text="Slamet Budi Santoso"
+            android:textColor="#FFF"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#FFF"
+            android:id="@+id/tvEmail"
+            android:text="slamet.bsan@gmail.com" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:background="#FFF"
+        android:id="@+id/layoutAbsen"
+        android:layout_below="@id/fotoProfil">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sekarang:"
+            android:fontFamily="sans-serif-light"
+            android:textSize="10sp"
+            android:paddingStart="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamis, 28 Mei 2020"
+            android:id="@+id/tvHariTanggal"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi:"
+            android:fontFamily="sans-serif-light"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLokasi"
+            android:fontFamily="sans-serif-medium"
+            android:text="Perumnas Blok S15, Gejagan, Kec. Loceret, Kabupaten Nganjuk, Jawa Timur 64471"
+            android:paddingStart="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/btnHadir"
+                android:text="ABSEN HADIR"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/btnPulang"
+                android:text="ABSEN PULANG"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutAbsen"
+        tools:listitem="@layout/row_absen_user"
+        android:id="@+id/rvAbsensi"/>
+
+</RelativeLayout>
