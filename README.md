@@ -1,3 +1,5 @@
+> Aplikasi jadi bisa anda unduh dari playstore berikut: [Absensi Online](https://play.google.com/store/apps/details?id=id.my.slametbsan.absensifirebase)
+
 # AbsensiFirebase
 
 ![Absensi Online](/gbr_playstore0.jpg?raw=true)
