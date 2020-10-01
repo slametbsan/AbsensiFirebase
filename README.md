@@ -1,5 +1,7 @@
-> Aplikasi jadi bisa anda unduh dari playstore berikut: [Absensi Online](https://play.google.com/store/apps/details?id=id.my.slametbsan.absensifirebase)
+> Aplikasi jadi bisa anda unduh dari playstore berikut: ~~[Absensi Online](https://play.google.com/store/apps/details?id=id.my.slametbsan.absensifirebase)~~
 > Aplikasi ini diberi lisensi: open source, Anda bebas mem-*fork* dan mengembangkannya. Dan, jika anda rasa ini bermanfaat, bolehlah [berbagi kopi](https://www.buymeacoffee.com/slametbsan) dengan saya.
+> Aplikasinya dihapus dari Playstore karena masalah penggunaan aset (logo, simbol, dan nama) dari brand populer atau lainnya tanpa ijin. Kemungkinan karena aplikasi ini mencantumkan logo dan nama "Firebase". Berikut ini email dari Android.
+![Dihapus Playstore](/dihapus-playstore.png?raw=true)
 
 # AbsensiFirebase
 
